@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>
+			assignment operators
+		</title>
+		<link rel="stylesheet" href="ex.css">
+	</head>
+	<body>
+		<input type="number" placeholder="hello" id="ab">
+		<input type="number" placeholder="hello" id="ba">
+			<button onclick="calculate('+')">
+				addition
+			</button><br>
+			
+			<button onclick="calculate('-')">
+				substraction
+			</button>
+			<button onclick="calculate('*')">
+				multiplacation
+			</button>
+			<button onclick="calculate('/')">
+				division
+			</button>
+		<script>
+			function calculate(x) {
+				let a=(document.getElementById("ab").value);
+				let b=(document.getElementById("ba")).value);
+				if(x=='+')
+					console.log(x=a+b);
+				else if(x=='-'){
+					console.log(x=a-b);
+				}
+				else if(x=='*'){
+					console.log(x=a*b);
+				}
+				else if(x=='/'){
+					console.log(x=a/b);
+				}
+			
+			}
+			
+		</script>
+	</body>
+</html>
